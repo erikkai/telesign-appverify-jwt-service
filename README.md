@@ -1,4 +1,6 @@
-> **NOTE:** This is an older code sample showing TeleSign customers how to set up a JWT service for use with the product App Verify.
+[![Link Checker](https://github.com/erikkai/telesign-appverify-jwt-service/actions/workflows/link-checker.yml/badge.svg)](https://github.com/erikkai/telesign-appverify-jwt-service/actions/workflows/link-checker.yml)
+
+> **NOTE:** This is a legacy code sample showing TeleSign customers how to set up a JWT service for use with the product App Verify. Links that are dead with no redirect are removed. Some of the products described here are no longer available. This project was created to help customers see the basics for what's involved to create a JWT service.
 
 # Implement a JWT Service
 This tutorial provides basic instructions for implementing a JWT service. You must have a server and JWT service in place if you want to use App Verify.
@@ -92,7 +94,7 @@ app = Flask(__name__)
 @app.route('v1/token/<phone_number>/<xid>', methods=['GET'])
 ```
 
-8. Create the code for constructing and retrieving tokens and then storing them in your database. This code will take a phone number and an optional external ID (XID) as an argument. If you do not provide an XID as an argument, one is generated for you. XIDs are used to reference a specific transaction, for use with [Get Status](https://enterprise.telesign.com/api-reference/get-status-verify-transaction-api#use-get-status-to-share-completion-data) or [Verification Callback](https://enterprise.telesign.com/api-reference/get-status-verify-transaction-api#verify-transaction-callback-web-service).
+8. Create the code for constructing and retrieving tokens and then storing them in your database. This code will take a phone number and an optional external ID (XID) as an argument. If you do not provide an XID as an argument, one is generated for you. XIDs are used to reference a specific transaction, for use with Get Status or Verification Callback.
 
 NOTE: You must base64 decode your key before adding it with the rest of the token.
 
@@ -150,11 +152,11 @@ if __name__ == "__main__": app.run(host = '0.0.0.0')
 # Resources
 This section provides a list of third party resources that will help you build your own JWT service:
 
-* [jwt.io](https://jwt.io/) - jwt.io features a great debugger page. You can enter your encoded token and secret key, and the debugger will let you know if your token is formed properly.
-* [The Mongo DB Manual](https://docs.mongodb.com/manual/) - A great manual for installing and configuring a MongoDB database.
-* [Getting Started with MongoDB (MongoDB Shell Edition)](https://docs.mongodb.com/getting-started/shell/) - Choose from Python, Node.JS, C++, Java, and C# editions.
-* [Welcome to Flask](http://flask.pocoo.org/docs/1.0/) - Everything you need to know about Flask.
-* [Flask-Limiter](https://pypi.python.org/pypi/Flask-Limiter) - Details about Flask-Limiter, which provides rate limiting features to flask routes.
-* [PyJWT](https://pypi.python.org/pypi/PyJWT/1.4.0) - Information about PyJWT, which you use to encode tokens in this tutorial.
+* [www.jwt.io](https://www.jwt.io/) - jwt.io features a great debugger page. You can enter your encoded token and secret key, and the debugger will let you know if your token is formed properly.
+* [The Mongo DB Manual](https://docs.mongodb.com/docs/manual/) - A great manual for installing and configuring a MongoDB database.
+* Getting Started with MongoDB (MongoDB Shell Edition) - Choose from Python, Node.JS, C++, Java, and C# editions.
+* [Welcome to Flask](http://flask.palletsprojects.com/en/stable/) - Everything you need to know about Flask.
+* [Flask-Limiter](https://pypi.org/project/Flask-Limiter/) - Details about Flask-Limiter, which provides rate limiting features to flask routes.
+* [PyJWT](https://pypi.org/project/PyJWT/1.4.0/) - Information about PyJWT, which you use to encode tokens in this tutorial.
 
 
