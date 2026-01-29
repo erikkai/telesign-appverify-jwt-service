@@ -1,7 +1,4 @@
-# build-a-jwt-service
-Shows you how to build a JWT service for use when testing TeleSign's App Verify SDK
-
-You can find TeleSign's App Verify SDK here: https://enterprise.telesign.com/legacy-products/app-verify-android-sdk
+> **NOTE:** This is an older code sample showing TeleSign customers how to set up a JWT service for use with the product App Verify.
 
 # Implement a JWT Service
 This tutorial provides basic instructions for implementing a JWT service. You must have a server and JWT service in place if you want to use App Verify.
