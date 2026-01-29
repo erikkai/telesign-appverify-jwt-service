@@ -18,7 +18,7 @@ jobs:
           # Enabling checking of the info that comes after '#' in a link.
           args: --verbose --no-progress --include-fragments '.'
           # We set this to false so the workflow continues to the "File a Bug" step
-          fail: false 
+          fail: true 
 
       - name: Create Issue if links are broken
         # This checks the "id: lychee" output to see if it found errors
