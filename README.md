@@ -1,6 +1,6 @@
 [![Link Checker](https://github.com/erikkai/telesign-appverify-jwt-service/actions/workflows/link-checker.yml/badge.svg)](https://github.com/erikkai/telesign-appverify-jwt-service/actions/workflows/link-checker.yml)
 
-> **LEGACY ARCHIVE:** This project demonstrates the backend architecture for a JWT Service integrated with TeleSign's (now legacy) App Verify product. Dead links have been audited and removed. It is maintained here as a functional example of token-based authentication patterns.
+> **LEGACY PROJECT:** This project demonstrates the backend architecture for a JWT Service integrated with TeleSign's (now legacy) App Verify product. Dead links have been audited and removed. It is maintained here as a functional example of token-based authentication patterns.
 
 
 # Implement a JWT Service
