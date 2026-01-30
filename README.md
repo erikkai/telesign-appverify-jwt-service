@@ -1,6 +1,7 @@
 [![Link Checker](https://github.com/erikkai/telesign-appverify-jwt-service/actions/workflows/link-checker.yml/badge.svg)](https://github.com/erikkai/telesign-appverify-jwt-service/actions/workflows/link-checker.yml)
 
-> **NOTE:** This is a legacy code sample showing TeleSign customers how to set up a JWT service for use with the product App Verify. Links that are dead with no redirect are removed. Some of the products described here are no longer available. This project was created to help customers see the basics for what's involved to create a JWT service.
+> **LEGACY ARCHIVE:** This project demonstrates the backend architecture for a JWT Service integrated with TeleSign's (now legacy) App Verify product. Dead links have been audited and removed. It is maintained here as a functional example of token-based authentication patterns.
+
 
 # Implement a JWT Service
 This tutorial provides basic instructions for implementing a JWT service. You must have a server and JWT service in place if you want to use App Verify.
